@@ -209,10 +209,106 @@ const galleryItems = [
 
   {
     preview:
-      "https://cdn.pixabay.com/photo/2022/04/16/15/34/woman-7136507__480.jpg",
+      "https://cdn.pixabay.com/photo/2022/03/24/14/42/animal-7089224__480.jpg",
     original:
-      "https://cdn.pixabay.com/photo/2022/04/16/15/34/woman-7136507_1280.jpg",
-    description: "Woman Disco Ball Fashion Sexual Young Woman Studio",
+      "https://cdn.pixabay.com/photo/2022/03/24/14/42/animal-7089224_1280.jpg",
+    description: "Animal Cat Feline Pet Mammal Fur Whiskers Macro",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/20/11/04/mountains-7080595__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/20/11/04/mountains-7080595_1280.jpg",
+    description: "Mountains Village Lake Town Buildings Villas",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/27/15/03/cityscape-7095358__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/27/15/03/cityscape-7095358_1280.jpg",
+    description: "Cityscape Monochrome Bridge City Building Travel",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/02/26/16/48/flag-7036018__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/02/26/16/48/flag-7036018_1280.jpg",
+    description: "Flag Ukraine War Peace Soldier Country Map",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2021/08/12/10/38/mountains-6540497__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2021/08/12/10/38/mountains-6540497_1280.jpg",
+    description: "Mountains Dolomites Alps South Tyrol Italy",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2017/12/18/14/07/woman-3026201__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2017/12/18/14/07/woman-3026201_1280.jpg",
+    description: "woman model naked sexy",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/31/04/08/bird-7102171__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/31/04/08/bird-7102171_1280.jpg",
+    description: "Bird Western Meadowlark Ornithology Species Fauna",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_1280.jpg",
+    description: "Desert Children Sand Dune Playing Childhood Kids",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/14/13/38/ukraine-7068221__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/14/13/38/ukraine-7068221_1280.jpg",
+    description: "Ukraine Flag Little Boy Destruction Buildings Fire",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/02/16/04/fox-7107267__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/02/16/04/fox-7107267_1280.jpg",
+    description: "Fox Forest Nature Animal Mammal Ecosystem Canine",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/12/19/14/sea-7064686__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/12/19/14/sea-7064686_1280.jpg",
+    description: "Sea Sunset Dusk Horizon Nature Seascape Waves",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/02/12/19/58/cat-7009836__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/02/12/19/58/cat-7009836_1280.jpg",
+    description: "Cat Sleep Nap Domestic Animal Fur Relax Animal",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/01/21/17/04/bird-6955201__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/01/21/17/04/bird-6955201_1280.jpg",
+    description: "Bird Parrot Multicoloured Colorful Feathers Animal",
   },
 ];
 
