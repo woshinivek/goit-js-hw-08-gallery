@@ -62,4 +62,158 @@ const galleryItems = [
       "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
     description: "Lighthouse Coast Sea",
   },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/23/08/13/flamingo-7086655__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/23/08/13/flamingo-7086655_1280.jpg",
+    description: "Flamingo Bird Animal Wading Bird Water Bird",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/23/08/40/sew-7086689__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/23/08/40/sew-7086689_1280.jpg",
+    description: "Sew Hobby Work Craft Pearl Fabric Pearls Glitter",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/15/06/32/river-7133713__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/15/06/32/river-7133713_1280.jpg",
+    description: "River Boat Fisherman Net Pestle Dawn Beauty Scene",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/12/18/00/europe-7128531__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/12/18/00/europe-7128531_1280.jpg",
+    description: "Europe Switzerland Lucerne City Architecture",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/02/06/19/05/lamp-6997864__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/02/06/19/05/lamp-6997864_1280.jpg",
+    description: "Lamp Bricks Windows Street City Architecture",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/02/23/09/46/woman-7030387__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/02/23/09/46/woman-7030387_1280.jpg",
+    description: "Woman Cooking Clay Pots Traditional Firewood",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/18/16/20/animal-7140980__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/18/16/20/animal-7140980_1280.jpg",
+    description: "Animal Cat Feline Mammal Kitty Pets Fur Whiskers",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/17/11/38/city-7137958__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/17/11/38/city-7137958_1280.jpg",
+    description: "City Buildings Sea Bullring Malaga Spain Coast",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/12/19/56/rye-7128823__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/12/19/56/rye-7128823_1280.jpg",
+    description: "Rye Corn Harvest Organic Macro",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2015/04/14/10/30/bird-721951__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2015/04/14/10/30/bird-721951_1280.jpg",
+    description: "Bird Ornithology Chicken Cockerel Animal Wings",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/29/21/04/eggs-7100211__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/29/21/04/eggs-7100211_1280.jpg",
+    description: "Eggs Easter Eggs Easter Spring Painted Eggs",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884_1280.jpg",
+    description: "Clouds Sky Atmosphere Blue Sky Cloudscape",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/07/11/45/bird-7117346__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/07/11/45/bird-7117346_1280.jpg",
+    description: "Bird Ornithology Hummingbird Green Hummingbird",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg",
+    description: "Field Morning Sunrise Dawn Nature Landscape Sky",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/19/21/11/crocus-7079550__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/19/21/11/crocus-7079550_1280.jpg",
+    description: "Crocus Flowers Spring Plant White Flowers Bloom",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/03/23/21/27/road-7087957__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/03/23/21/27/road-7087957_1280.jpg",
+    description: "Road Highway Countryside Hills Landscape Hill",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/04/03/10/wooden-bench-7110299__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/04/03/10/wooden-bench-7110299_1280.jpg",
+    description: "Wooden Bench Seat Sea Ocean Water Delay Calm",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/16/15/34/woman-7136507__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/16/15/34/woman-7136507_1280.jpg",
+    description: "Woman Disco Ball Fashion Sexual Young Woman Studio",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/16/15/34/woman-7136507__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/16/15/34/woman-7136507_1280.jpg",
+    description: "Woman Disco Ball Fashion Sexual Young Woman Studio",
+  },
 ];
+
+console.log(galleryItems.length);
