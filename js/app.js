@@ -4,7 +4,10 @@ const galleryRef = document.querySelector(".js-gallery");
 
 const galleryMarkup = galleryItems
   .map((item) => {
-    return `<li><div class="thumb"><img src=${item.preview} width="340"  ></div></li>`;
+    return `
+    <li class="gallery__item">
+        <img class="gallery__image "src=${item.preview} >
+    </li>`;
   })
   .join("");
 
