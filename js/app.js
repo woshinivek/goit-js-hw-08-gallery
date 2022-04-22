@@ -10,16 +10,17 @@ const galleryMarkup = galleryItems
     return `
     <li class="gallery__item">
 
-      <a 
+      <a
         class="gallery__link"
         href="${item.original}"
       >
-  
-      <img 
+
+      <img
         loading="lazy"
         class="gallery__image lazyload"
-        src=${item.preview} data-source="${item.original}" 
+        src=${item.preview} data-source="${item.original}"
       >
+
       </a>
     </li>`;
   })

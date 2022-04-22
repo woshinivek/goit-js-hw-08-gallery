@@ -1,6 +1,7 @@
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
+  --items-gap: 20px;
 }
 
 html {
@@ -13,28 +14,32 @@ html {
   box-sizing: inherit;
 }
 
-body {
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: calc(-1 * var(--items-gap));
+  margin-left: calc(-1 * var(--items-gap));
+}
+
+.gallery__item {
+  flex-basis: calc(100% / 3 - var(--items-gap));
+  margin-top: var(--items-gap);
+  margin-left: var(--items-gap);
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background-color: #fff;
   color: #212121;
-}
-
-.gallery {
-  display: grid;
-  width: 1200px;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  grid-auto-rows: 240px;
-  grid-gap: 12px;
-  padding: 0;
-  list-style: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .gallery__item {
