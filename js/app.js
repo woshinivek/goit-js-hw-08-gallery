@@ -32,17 +32,11 @@ refs.gallery.innerHTML = galleryMarkup;
 
 const linksRef = document.querySelectorAll(".gallery__link");
 
-refs.gallery.addEventListener("click", onLinkClick);
-
-function onLinkClick(evt) {
-  evt.preventDefault();
-
-  console.log("on link click");
-}
-
 refs.gallery.addEventListener("click", onGalleryImgClick);
 
 function onGalleryImgClick(evt) {
+  evt.preventDefault();
+
   if (!evt.target.classList.contains("gallery__image")) {
     return;
   }
