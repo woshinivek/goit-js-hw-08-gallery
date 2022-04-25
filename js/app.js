@@ -28,7 +28,17 @@ const galleryMarkup = galleryItems
 
 refs.gallery.innerHTML = galleryMarkup;
 
-const imagesRef = document.querySelectorAll('img[loading="lazy"]');
+// const imagesRef = document.querySelectorAll('img[loading="lazy"]');
+
+const linksRef = document.querySelectorAll(".gallery__link");
+
+refs.gallery.addEventListener("click", onLinkClick);
+
+function onLinkClick(evt) {
+  evt.preventDefault();
+
+  console.log("on link click");
+}
 
 refs.gallery.addEventListener("click", onGalleryImgClick);
 
@@ -37,5 +47,6 @@ function onGalleryImgClick(evt) {
     return;
   }
 
-  refs.lightBox.classList.add("is-open");
+  // refs.lightBox.classList.add("is-open");
+  console.log("modal is open");
 }
