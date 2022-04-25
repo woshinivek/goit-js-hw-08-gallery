@@ -28,6 +28,14 @@ const galleryMarkup = galleryItems
 
 refs.gallery.innerHTML = galleryMarkup;
 
-const images = document.querySelectorAll('img[loading="lazy"]');
+const imagesRef = document.querySelectorAll('img[loading="lazy"]');
 
-console.log(images);
+refs.gallery.addEventListener("click", onGalleryImgClick);
+
+function onGalleryImgClick(evt) {
+  if (!evt.target.classList.contains("gallery__image")) {
+    return;
+  }
+
+  refs.lightBox.classList.add("is-open");
+}
