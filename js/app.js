@@ -44,3 +44,5 @@ function onGalleryImgClick(evt) {
   // refs.lightBox.classList.add("is-open");
   console.log("modal is open");
 }
+
+console.dir();
