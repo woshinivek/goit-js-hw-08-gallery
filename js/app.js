@@ -3,6 +3,7 @@ import galleryItems from "./galleryItems.js";
 const refs = {
   gallery: document.querySelector(".js-gallery"),
   lightBox: document.querySelector(".js-lightbox"),
+  lightboxOverlay: document.querySelector(".lightbox__overlay"),
 };
 
 const galleryMarkup = galleryItems
@@ -31,8 +32,13 @@ refs.gallery.innerHTML = galleryMarkup;
 // const imagesRef = document.querySelectorAll('img[loading="lazy"]');
 
 const linksRef = document.querySelectorAll(".gallery__link");
+const btnLightBoxClose = document.querySelector(
+  'button[data-action="close-lightbox"]'
+);
 
 refs.gallery.addEventListener("click", onGalleryImgClick);
+btnLightBoxClose.addEventListener("click", onLightBoxClose);
+refs.lightboxOverlay.addEventListener("click", onLightBoxClick);
 
 function onGalleryImgClick(evt) {
   evt.preventDefault();
@@ -41,8 +47,23 @@ function onGalleryImgClick(evt) {
     return;
   }
 
-  // refs.lightBox.classList.add("is-open");
-  console.log("modal is open");
+  refs.lightBox.classList.add("is-open");
+  window.addEventListener("keydown", onEscKey);
 }
 
-console.dir();
+function onLightBoxClose(evt) {
+  refs.lightBox.classList.remove("is-open");
+  window.removeEventListener("keydown", onEscKey);
+}
+
+function onLightBoxClick(evt) {
+  if (evt.target === evt.currentTarget) {
+    onLightBoxClose();
+  }
+}
+
+function onEscKey(evt) {
+  if (evt.code === "Escape") {
+    onLightBoxClose();
+  }
+}
