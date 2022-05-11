@@ -1,5 +1,11 @@
 import galleryItems from "./galleryItems.js";
 
+if ("loading" in HTMLImageElement.prototype) {
+  console.log("supported");
+} else {
+  console.log("not supported");
+}
+
 const refs = {
   gallery: document.querySelector(".js-gallery"),
   lightBox: document.querySelector(".js-lightbox"),
@@ -20,6 +26,7 @@ const galleryMarkup = galleryItems
       <img
         loading="lazy"
         class="gallery__image lazyload"
+
         src=${item.preview} data-source="${item.original}"
       >
 
