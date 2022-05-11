@@ -1,16 +1,11 @@
 import galleryItems from "./galleryItems.js";
 
-if ("loading" in HTMLImageElement.prototype) {
-  console.log("supported");
-} else {
-  console.log("not supported");
-}
-
 const refs = {
   gallery: document.querySelector(".js-gallery"),
   lightBox: document.querySelector(".js-lightbox"),
   lightboxOverlay: document.querySelector(".lightbox__overlay"),
   lightBoxImage: document.querySelector(".lightbox__image"),
+  content: document.querySelector(".lightbox__content"),
 };
 
 const galleryMarkup = galleryItems
@@ -26,8 +21,7 @@ const galleryMarkup = galleryItems
       <img
         loading="lazy"
         class="gallery__image lazyload"
-
-        src=${item.preview} data-source="${item.original}"
+        data-src="${item.preview}"
       >
 
       </a>
@@ -37,10 +31,33 @@ const galleryMarkup = galleryItems
 
 refs.gallery.innerHTML = galleryMarkup;
 
-// const imagesRef = document.querySelectorAll('img[loading="lazy"]');
+if ("loading" in HTMLImageElement.prototype) {
+  const images = document.querySelectorAll('img[loading="lazy"]');
 
-const linksRef = document.querySelectorAll(".gallery__link");
-const linksArray = [...linksRef];
+  images.forEach((img) => {
+    img.src = img.dataset.src;
+  });
+} else {
+  const script = document.createElement("script");
+
+  script.src =
+    "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
+
+  script.setAttribute(
+    "integrity",
+    "sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+  );
+  // script.integrity =
+  //   "sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==";
+
+  script.setAttribute("crossorigin", "anonymous");
+  // script.crossOrigin = "anonymous";
+
+  script.setAttribute("referrerpolicy", "no-referrer");
+  // script.referrerPolicy = "no-referrer";
+
+  document.body.appendChild(script);
+}
 
 const btnLightBoxClose = document.querySelector(
   'button[data-action="close-lightbox"]'
@@ -60,6 +77,7 @@ function onGalleryImgClick(evt) {
   refs.lightBox.classList.add("is-open");
 
   const imageSrc = evt.target.parentNode.href;
+  // refs.lightBoxImage.innerHTML = "";
   refs.lightBoxImage.src = imageSrc;
 
   window.addEventListener("keydown", onEscKey);
@@ -68,6 +86,7 @@ function onGalleryImgClick(evt) {
 
 function onLightBoxClose(evt) {
   refs.lightBox.classList.remove("is-open");
+  refs.lightBoxImage.src = "";
   window.removeEventListener("keydown", onEscKey);
   window.removeEventListener("keydown", onArrowKeyPress);
 }
