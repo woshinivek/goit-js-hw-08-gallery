@@ -32,31 +32,9 @@ const galleryMarkup = galleryItems
 refs.gallery.innerHTML = galleryMarkup;
 
 if ("loading" in HTMLImageElement.prototype) {
-  const images = document.querySelectorAll('img[loading="lazy"]');
-
-  images.forEach((img) => {
-    img.src = img.dataset.src;
-  });
+  addSrcAtribute();
 } else {
-  const script = document.createElement("script");
-
-  script.src =
-    "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
-
-  script.setAttribute(
-    "integrity",
-    "sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
-  );
-  // script.integrity =
-  //   "sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==";
-
-  script.setAttribute("crossorigin", "anonymous");
-  // script.crossOrigin = "anonymous";
-
-  script.setAttribute("referrerpolicy", "no-referrer");
-  // script.referrerPolicy = "no-referrer";
-
-  document.body.appendChild(script);
+  addLazySizesScript();
 }
 
 const btnLightBoxClose = document.querySelector(
@@ -84,9 +62,10 @@ function onGalleryImgClick(evt) {
   window.addEventListener("keydown", onArrowKeyPress);
 }
 
-function onLightBoxClose(evt) {
+function onLightBoxClose() {
   refs.lightBox.classList.remove("is-open");
   refs.lightBoxImage.src = "";
+
   window.removeEventListener("keydown", onEscKey);
   window.removeEventListener("keydown", onArrowKeyPress);
 }
@@ -109,4 +88,28 @@ function onEscKey(evt) {
 
 function onArrowKeyPress(evt) {
   console.log(evt.code);
+}
+
+function addLazySizesScript() {
+  const script = document.createElement("script");
+
+  script.src =
+    "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
+
+  script.setAttribute(
+    "integrity",
+    "sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+  );
+  script.setAttribute("crossorigin", "anonymous");
+  script.setAttribute("referrerpolicy", "no-referrer");
+
+  document.body.appendChild(script);
+}
+
+function addSrcAtribute() {
+  const images = document.querySelectorAll('img[loading="lazy"]');
+
+  images.forEach((img) => {
+    img.src = img.dataset.src;
+  });
 }
