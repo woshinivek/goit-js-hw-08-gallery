@@ -5,7 +5,6 @@ const refs = {
   lightBox: document.querySelector(".js-lightbox"),
   lightboxOverlay: document.querySelector(".lightbox__overlay"),
   lightBoxImage: document.querySelector(".lightbox__image"),
-  content: document.querySelector(".lightbox__content"),
 };
 
 const galleryMarkup = galleryItems
@@ -55,7 +54,6 @@ function onGalleryImgClick(evt) {
   refs.lightBox.classList.add("is-open");
 
   const imageSrc = evt.target.parentNode.href;
-  // refs.lightBoxImage.innerHTML = "";
   refs.lightBoxImage.src = imageSrc;
 
   window.addEventListener("keydown", onEscKey);
@@ -82,10 +80,6 @@ function onEscKey(evt) {
   }
 }
 
-// function replacingImgSrc(evt, link) {
-//   evt.target.src = link;
-// }
-
 function onArrowKeyPress(evt) {
   console.log(evt.code);
 }
@@ -108,6 +102,7 @@ function addLazySizesScript() {
 
 function addSrcAtribute() {
   const images = document.querySelectorAll('img[loading="lazy"]');
+  console.log(images);
 
   images.forEach((img) => {
     img.src = img.dataset.src;

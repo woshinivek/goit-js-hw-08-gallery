@@ -310,4 +310,76 @@ export default [
       "https://cdn.pixabay.com/photo/2022/01/21/17/04/bird-6955201_1280.jpg",
     description: "Bird Parrot Multicoloured Colorful Feathers Animal",
   },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/05/02/10/10/siberian-husky-7169324__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/05/02/10/10/siberian-husky-7169324_1280.jpg",
+    description: "Siberian Husky",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/02/05/50/pet-7106365__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/02/05/50/pet-7106365_1280.jpg",
+    description: "Pet Game Park Play Old Dog Dog Park",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2021/03/22/01/58/monk-6113501__480.png",
+    original:
+      "https://cdn.pixabay.com/photo/2021/03/22/01/58/monk-6113501_1280.png",
+    description: "monk sunset peace",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/04/27/20/53/birds-7161315__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/04/27/20/53/birds-7161315_1280.jpg",
+    description: "birds geese goslings",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2021/11/25/13/05/woman-6823558__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2021/11/25/13/05/woman-6823558_1280.jpg",
+    description: "Woman Model Smile Happy Forest Creative Nature",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/05/08/14/30/couple-7182248__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2022/05/08/14/30/couple-7182248_1280.jpg",
+    description: "Couple Records Bazaar Market Love Romance Shop",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2018/10/19/09/17/travel-3758193__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2018/10/19/09/17/travel-3758193_1280.jpg",
+    description: "wildebeest horns animal",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2021/11/12/09/14/wildebeest-6788446__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2021/11/12/09/14/wildebeest-6788446_1280.jpg",
+    description: "travels ocean sri lanka",
+  },
+
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2020/10/05/00/03/cat-5627808__480.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2020/10/05/00/03/cat-5627808_1280.jpg",
+    description: "Cat Pet Animal Domestic Cat Feline Mammal",
+  },
 ];
