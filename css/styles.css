@@ -53,8 +53,13 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  /* opacity: 0; */
   transition: transform var(--animation-duration) var(--timing-function);
 }
+
+/* .gallery__image.appear {
+  opacity: 1;
+} */
 
 .gallery__link {
   display: block;

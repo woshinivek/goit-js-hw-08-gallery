@@ -18,10 +18,11 @@ const galleryMarkup = galleryItems
       >
 
       <img
-        loading="lazy"
-        class="gallery__image lazyload"
-        data-src="${item.preview}"
-      >
+      loading="lazy"
+      class="gallery__image lazyload"
+      data-src="${item.preview}"
+      alt="${item.description}"
+      > 
 
       </a>
     </li>`;
@@ -31,8 +32,10 @@ const galleryMarkup = galleryItems
 refs.gallery.innerHTML = galleryMarkup;
 
 if ("loading" in HTMLImageElement.prototype) {
+  console.log("hi google");
   addSrcAtribute();
 } else {
+  console.log("hi safari");
   addLazySizesScript();
 }
 
@@ -84,6 +87,14 @@ function onArrowKeyPress(evt) {
   console.log(evt.code);
 }
 
+function addSrcAtribute() {
+  const images = document.querySelectorAll('img[loading="lazy"]');
+
+  images.forEach((img) => {
+    img.src = img.dataset.src;
+  });
+}
+
 function addLazySizesScript() {
   const script = document.createElement("script");
 
@@ -100,11 +111,15 @@ function addLazySizesScript() {
   document.body.appendChild(script);
 }
 
-function addSrcAtribute() {
-  const images = document.querySelectorAll('img[loading="lazy"]');
-  console.log(images);
+/* 
 
-  images.forEach((img) => {
-    img.src = img.dataset.src;
-  });
+const allImages = document.querySelectorAll('img[class="gallery__image"]');
+
+allImages.forEach((img) => img.addEventListener("load", onImageLoaded));
+function onImageLoaded(evt) {
+  evt.target.classList.add("appear");
 }
+
+console.log(allImages); 
+
+*/
